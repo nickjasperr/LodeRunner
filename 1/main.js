@@ -160,7 +160,7 @@ function Recommencer(){
 function CollecteOr(){
     score += 250;
     sondOr += 1;
-    //or.play();
+    sondOr.play();
     if(or > 2){
         map.descendreEchelle = true;
     }
@@ -315,6 +315,7 @@ function Dessiner(){
     ctx.fillText("Vies: " + vies.toString(), canvas.width * 0.8, canvas.height * 0.97);
     
 }
+
 
 
 
