@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Lode Runner - Nicholas Birla-Eliade</title>
+
+<style>
+
+body
+{
+    background:#111;
+    color:white;
+    font-family:Arial;
+    text-align:center;
+}
+
+canvas
+{
+    border:2px solid white;
+    display:block;
+    margin:auto;
+    image-rendering:pixelated;
+}
+
+.controls
+{
+    margin-top:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>Lode Runner</h2>
+Par Nicholas Birla-Eliade
+
+<canvas id="canvas"></canvas>
+
+<div class="controls">
+
+Taille:
+<input type="range" id="sliderTaille" min="1" max="4" value="3">
+<span id="labelTaille">3</span>x
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+Vitesse:
+<input type="range" id="sliderVitesse" min="15" max="60" value="30" step="15">
+<span id="labelVitesse">1.0</span>x
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+Intelligence:
+<input type="range" id="sliderIntelligence" min="0" max="3" value="3" step="1">
+<span id="labelIntelligence">3</span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+<label for="checkboxDebogue">Debogue:</label>
+<input type="checkbox" id="checkboxDebogue">
+
+</div>
+
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<script src="textureur.js"></script>
+<script src="particule.js"></script>
+<script src="joueur.js"></script>
+<script src="map.js"></script>
+<script src="ennemi.js"></script>
+<script src="main.js"></script>
+
+</body>
+
+</html>
