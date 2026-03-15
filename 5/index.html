@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Lode Runner - Nicholas Birla-Eliade</title>
+
+<style>
+
+body
+{
+    background:#111;
+    color:white;
+    font-family:Arial;
+    text-align:center;
+}
+
+canvas
+{
+    border:2px solid white;
+    display:block;
+    margin:auto;
+    image-rendering:pixelated;
+}
+
+.controls
+{
+    margin-top:10px;
+}
+
+.copyright
+{
+    margin:50px;
+    color:#ffffff19;
+}
+
+.labelFichierImporte {
+    display: inline-block;
+    margin-left: 50px;
+    padding: 6px 12px;
+    background-color: #0091ff;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+}
+.labelFichierImporte:hover {
+    background-color: lab(55.42% -4.04 -45.27);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>Lode Runner</h2>
+<h4>Par Nicholas Birla-Eliade</h4>
+
+<canvas id="canvas"></canvas>
+
+<div class="controls">
+
+Taille:
+<input type="range" id="sliderTaille" min="1" max="4" value="3">
+<span id="labelTaille">3</span>x
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+Vitesse:
+<input type="range" id="sliderVitesse" min="15" max="60" value="30" step="15">
+<span id="labelVitesse">1.0</span>x
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+Intelligence:
+<input type="range" id="sliderIntelligence" min="0" max="4" value="3" step="1">
+<span id="labelIntelligence">3</span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+<label for="checkboxDebogue">Debogue:</label>
+<input type="checkbox" id="checkboxDebogue">
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+<input type="file" id="fichierImporte" accept=".txt" style="display:none;">
+<label for="fichierImporte" class="labelFichierImporte">Importer Jeu</label>
+
+</div>
+
+<div class="copyright">
+    <p>
+        © 2026 Nicholas (Jasper) Birla-Eliade. Tous droits réservés.
+    </p>
+    <p>
+        Ce projet, son code, ainsi que certaines de ces fiches audios incluses sont la propriété exclusive de Nicholas Birla-Eliade, aka Nick Jasper. 
+    </p>
+    <p>
+        Aucune partie de ce projet ne peut être reproduite, modifié ou distribuée sans autorisation écrite préalable.
+    </p>
+</div>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<script src="textureur.js"></script>
+<script src="particule.js"></script>
+<script src="joueur.js"></script>
+<script src="map.js"></script>
+<script src="ennemi.js"></script>
+<script src="main.js"></script>
+
+</body>
+
+</html>
